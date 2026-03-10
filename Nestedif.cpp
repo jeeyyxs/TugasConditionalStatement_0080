@@ -4,7 +4,7 @@ using namespace std;
 float berat,tinggi;
 
 void inputData()
- {
+ {//startinputdata
     cout << "--- Selamat Datang Mahasiswa Kelas B 2025 --- " << endl;
     
     cout << "Masukkan Berat Badan (kg): ";
@@ -12,7 +12,7 @@ void inputData()
     cout << "Masukkan Tinggi Badan (m): ";
     cin >> tinggi;
 
-}
+}//selesaiinputdata
 
 float hitungBMI (float a, float b)
 {
@@ -36,7 +36,7 @@ string statusBMI (float bmi)
 }
 
 int main() 
-{
+{//mulaiinputdata
     inputData();
 
     float bmi = hitungBMI (berat, tinggi);
@@ -47,4 +47,4 @@ int main()
 
     return 0;
 
-}
+}//selesaiinputdata
