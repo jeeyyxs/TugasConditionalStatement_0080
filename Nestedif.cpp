@@ -5,7 +5,8 @@ float berat,tinggi;
 
 void inputData()
  {
-
+    cout << "--- Selamat Datang Mahasiswa Kelas B 2025 --- " << endl;
+    
     cout << "Masukkan Berat Badan (kg): ";
     cin >> berat;
     cout << "Masukkan Tinggi Badan (m): ";
@@ -22,6 +23,7 @@ float hitungBMI (float a, float b)
 
 string statusBMI (float bmi)
 {
+
     if (bmi < 18.5)
         return "Berat badan kurang";
     else if (bmi < 25)
@@ -34,15 +36,15 @@ string statusBMI (float bmi)
 }
 
 int main() 
-{
+{//mulai
     inputData();
 
     float bmi = hitungBMI (berat, tinggi);
+    cout << "--- Hasil --- ";
 
     cout << "\nNilai BMI : " << bmi << endl;
     cout << "Status    : " << statusBMI(bmi) << endl;
 
     return 0;
 
-
-}
+}//selesai
