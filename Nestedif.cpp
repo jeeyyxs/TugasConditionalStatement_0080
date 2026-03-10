@@ -36,15 +36,15 @@ string statusBMI (float bmi)
 }
 
 int main() 
-{//mulai
+{
     inputData();
 
     float bmi = hitungBMI (berat, tinggi);
     cout << "--- Hasil --- ";
 
-    cout << "\nNilai BMI : " << bmi << endl;
+    cout << "\nBMI Anda : " << bmi << endl;
     cout << "Status    : " << statusBMI(bmi) << endl;
 
     return 0;
 
-}//selesai
+}
